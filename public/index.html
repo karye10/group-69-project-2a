@@ -15,46 +15,56 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style> -->
 </head>
-   <body class="font-fraunces">
+   <body class="font-sans box-border">
 
     <!--content wrapper-->
     <div>
-        <div class="bg-header-img">
-            <nav class="bg-aqua4 text-Whiteish">
-              <div class="md:flex justify-between">
+      
+        <div class="relative bg-header-img">
+            <nav class=" bg-aqua4 text-Whiteish">
+               <div class="md:flex justify-between">
                 <div class=" flex justify-between">
                     <div>
-                        <h2 class="text-xl font-bold p-4 md:mt-6">
+                        <h2 class="text-xl font-bold p-4 md:mt-1 md:p-6">
                             <a href="/">Sunnyside</a> 
                         </h2>
                     </div>
-
-                        <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 mr-4 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                       
+                     
+                        <svg xmlns="http://www.w3.org/2000/svg" class=" w-6 mr-4 md:hidden" id="burger" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg> 
                 </div>
 
                 <div class="flex justify-end mr-4">
-                        <ul class="text-gray-400 font-semibold p-10 md:flex">
+                        <ul class=" text-gray-400 font-semibold bg-white px-10 py-4 md:px-0 md:py-0 md:bg-aqua4 bg- sm:p-10 md:text-white md:flex hidden md:mt-6" id="menu">
         
                             <li class="p-2"><a href="/">About</a></li>
                             <li class="p-2"><a href="/">Services</a></li>
                             <li class="p-2"><a href="/" class="">Projects</a></li>
-                            <li class="bg-yellow-200 text-black rounded-full p-2"><a href="/" class="">Contact</a></li>
+
+                            <div>
+                            <li class="bg-yellow-200 text-black rounded-full p-2 md:text-white md:bg-aqua4 hover:bg-white hover:bg-opacity-50"><a href="/" class="hover:opacity-50">Contact</a></li>
+                            </div>
                         </ul>
                 </div>
               </div>
             </nav>
         </div>
-
-        
                 <div class="relative">
 
-                     <div class="absolute top-3 left-1/4">
-                      <h3 class=" text-Whiteish text-6xl font-bold"> We are creatives</h3>
+                     <div class="absolute top-3 left-1/4 md:top-40 md:left-1/3">
+                      <h3 class=" text-Whiteish text-6xl font-bold md:"> We are creatives</h3>
+
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-6 ml-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 17l-4 4m0 0l-4-4m4 4V3" />
+                      </svg>
+
                   </div>
                     <img src="img/image-header.jpg" alt="image-header">
                     
+                  
+              
 
                 </div>
         </div>
@@ -72,7 +82,7 @@
                              <p>We are a full-service creative agency specializing in helping brands grow fast. 
            Engage your clients through compelling visuals that do most of the marketing for you.</p><br>
 
-                                <a href="#" class="font-semibold text-xs uppercase bg-yellow-200">Learn more</a><br><br>
+                                <a href="#" class="font-semibold text-xs uppercase bg-yellow-200 hover:bg-yellow-500">Learn more</a><br><br>
                 </div>
             </div>
  
@@ -86,7 +96,7 @@
 
                                  <p class="font-light">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p><br>
 
-                                     <a href="#" class="font-semibold text-xs uppercase bg-red-300">Learn more</a><br><br>
+                                     <a href="#" class="font-semibold text-xs uppercase bg-red-300 hover:bg-red-600 focus:shadow-redd">Learn more</a><br><br>
                         </div>
                     
                  
@@ -112,7 +122,7 @@
         </main>
 
                 <div><br><br>
-                   <p class="text-center font-barlow text-lg font-semibold">Client testimonials</p><br><br>
+                   <p class="font-serif text-center text-gray-400 font-barlow text-lg font-semibold">CLIENT TESTIMONIALS</p><br><br>
 
 
                    <div class="md:flex justify-between">
@@ -129,9 +139,9 @@
                    <div class="flex justify-center">
                     <img src="img/image-thomas.jpg" alt="Thomas image" class="rounded-full">
                    </div><br>
-                    <p class="text-center"> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p><br><br>
+                    <p class="text-center"> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p><br>
                     <p class="text-center font-semibold text-lg">Thomas S.</p>
-                    <p class="text-center text-gray-400">Chief Operating Officer</p><br><br><br>
+                    <p class="text-center text-gray-400 focus:shadow-redd">Chief Operating Officer</p><br><br><br>
                 </div>
 
              <div>
@@ -163,30 +173,30 @@
 
                         <nav class="text-Darkcyan">
                           <ul class="flex justify-around">
-                                <li><a href="$">About</a></li>
-                                <li><a href="$">Services</a></li>
-                             <li><a href="$">Projects</a></li>
+                                <li class="hover:text-white cursor-pointer"><a href="$">About</a></li>
+                                <li class="hover:text-white"><a href="$">Services</a></li>
+                             <li class="hover:text-white"><a href="$">Projects</a></li>
                           </ul>
                         </nav>
                       </div><br><br>
 
 
-              <div class="flex justify-center">
+              <div class="flex justify-center cursor-pointer">
 
                 <div class="px-4">
-                    <img src="img/icon-facebook.svg" alt="icon-facebook">
+                    <img src="img/icon-facebook.svg" alt="icon-facebook" class="hover:cursor-pointer hover:bg-white">
                 </div>
 
                     <div class="px-4">
-                    <img src="img/icon-instagram.svg" alt="icon-instagram">
+                    <img src="img/icon-instagram.svg" alt="icon-instagram" class="hover:bg-white">
                     </div>
 
                  <div class="px-4">
-                    <img src="img/icon-twitter.svg" alt="icon-twitter">
+                    <img src="img/icon-twitter.svg" alt="icon-twitter" class="hover:bg-white">
                  </div>
 
                 <div class="px-4">
-                    <img src="img/icon-pinterest.svg" alt="icon-pinterest"><br><br>
+                    <img src="img/icon-pinterest.svg" alt="icon-pinterest " class="hover:bg-white"><br><br>
                     <br><br>
                 </div>
               
@@ -197,5 +207,7 @@
                 Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
                 Coded by <a href="#">Your Name Here</a>.
             </div> -->
+
+        <script src="index.js"></script>
     </body>
   </html>

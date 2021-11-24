@@ -37,7 +37,7 @@ module.exports = {
         'header-img': "url(public\img\image-header.jpg)",
       }),
 
-      shadow: {
+      boxShadow: {
               yelloww: 'rgb(248, 248, 51)',
                 redd:  'rgb(243, 97, 86)',
       },
